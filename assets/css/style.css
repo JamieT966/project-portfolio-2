@@ -16,7 +16,8 @@ body {
 #game-area {
     margin: 30px auto;
     height: 400px;
-    width: 600px;
+    width: 60%;
+    min-width: 600px;
     background-color: #f8f8f8;
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +31,39 @@ body {
 }    
 
 .button-class {
-    width: 200px;
+    width: 45%;
     height: 100px;
-    margin: 10px;
+    margin: 0 10px;
 }
+
+@media only screen and (max-width: 684px) {
+
+    #game-area {
+        height: 500px;
+        min-width: 450px;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    #game-area {
+        height: 500px;
+        min-width: 400px;
+    }
+
+    #game-area p {
+        padding: 0 15px;
+    }
+
+@media only screen and (max-width: 460px) {
+
+        #game-area {
+            height: 700px;
+            width: 20px;
+        }
+    
+        .button-class {
+            margin: 5px 20px;
+        }
+
