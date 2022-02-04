@@ -1,0 +1,36 @@
+body {
+    background-color: #2d3347;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#heading {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#heading img {
+    height: 3em;
+}
+
+#game-area {
+    margin: 30px auto;
+    height: 400px;
+    width: 600px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-area p{
+    width: 100%;
+    text-align: center;
+}    
+
+.button-class {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
