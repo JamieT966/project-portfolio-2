@@ -1,5 +1,6 @@
 body {
     background-color: #2d3347;
+    color: #2d3347;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
@@ -34,6 +35,8 @@ body {
     width: 45%;
     height: 100px;
     margin: 0 10px;
+    border-radius: 10px;
+    border: 2px solid #98c244;
 }
 
 @media only screen and (max-width: 684px) {
