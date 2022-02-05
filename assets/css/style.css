@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
 body {
     background-color: #2d3347;
     color: #2d3347;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 #heading {
@@ -14,42 +18,60 @@ body {
     height: 3em;
 }
 
-#game-area {
+/* Home page design */
+
+#home-area {
     margin: 30px auto;
     height: 400px;
     width: 60%;
     min-width: 600px;
     border-radius: 10px;
-    background-color: #f8f8f8;
+    background-image: linear-gradient(to bottom right, #f8f8f8, #2d3347);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-#game-area p{
+#home-area h2{
     width: 100%;
     text-align: center;
+    color: #2d3347;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
 }    
+
+#play-button {
+    width: 200px;
+    height: 75px;
+    border: 2px solid #f8f8f8;
+    background-color: #2d3347;
+    color: #f8f8f8;
+}
 
 .button-class {
     width: 45%;
     height: 100px;
     margin: 0 10px;
     border-radius: 5px;
-    border: 2px solid #98c244;
+    border: 3px solid #98c244;
 }
+
+/* Button links at bottom of page */
 
 #links {
     width: 98%;
     padding: 30px 0;
     text-align: center;
+    margin: 0 auto;
 }
 
 .fab, .fas {
     color: #98c244;
-    letter-spacing: 5px;
+    letter-spacing: 20px;
     font-size: 1.8rem;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 684px) {
