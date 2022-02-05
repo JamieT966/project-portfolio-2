@@ -9,6 +9,12 @@ body {
     padding: 0;
 }
 
+.link {
+    width: 20px;
+    height: 20px;
+    background-color: #98c244;
+}
+
 #heading {
     margin-top: 30px;
     text-align: center;
