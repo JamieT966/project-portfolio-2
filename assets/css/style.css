@@ -37,9 +37,10 @@ body {
     width: 100%;
     text-align: center;
     color: #2d3347;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Opem Sans', sans-serif;
     font-size: 2rem;
-    font-weight: bolder;
+    font-weight: normal;
+    letter-spacing: 2px;
 }    
 
 #play-button {
@@ -48,6 +49,18 @@ body {
     border: 2px solid #f8f8f8;
     background-color: #2d3347;
     color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+#play-button:hover {
+    background-color: #f8f8f8;
+    color: #2d3347;
+    border: 3px solid #2d3347;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.05);
 }
 
 .button-class {
@@ -56,6 +69,12 @@ body {
     margin: 0 10px;
     border-radius: 5px;
     border: 3px solid #98c244;
+    box-shadow: 1px 1px #2d3347;
+}
+
+.button-class:hover {
+    background-color: #f8f8f8;
+    color: #2d3347;
 }
 
 /* Button links at bottom of page */
