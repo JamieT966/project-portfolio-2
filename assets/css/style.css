@@ -63,6 +63,14 @@ body {
     transform: scale(1.05);
 }
 
+#home-area .fas {
+    color: #f8f8f8;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+/* Quiz page */
+
 .button-class {
     width: 45%;
     height: 100px;
