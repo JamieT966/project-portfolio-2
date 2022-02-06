@@ -27,7 +27,7 @@ html {
 
 /* Home page design */
 
-#home-area, #quiz-area {
+#home-area {
     margin: 30px auto;
     height: 400px;
     width: 60%;
@@ -70,16 +70,6 @@ html {
     transform: scale(1.05);
 }
 
-/* Quiz page */
-
-#quiz-area p {
-    text-align: center;
-    flex-basis: 90%;
-    font-family: 'Opem Sans', sans-serif;
-    font-weight: normal;
-    font-size: 1.4rem;
-} 
-
 .button-class {
     flex-basis: 40%;
     height: 100px;
@@ -93,19 +83,6 @@ html {
 .button-class:hover {
     background-color: #f8f8f8;
     color: #2d3347;
-}
-
-#submit {
-    text-align: center;
-}
-
-#submit-button, #next-button {
-        background-color: #98c244; 
-        border-radius: 5px;
-        border: 2px solid #f8f8f8;
-        color: #f8f8f8;
-        padding: 10px 20px;
-        font-size: 1.2rem;
 }
 
 /* Button links at bottom of page */
@@ -123,41 +100,3 @@ html {
     font-size: 1.8rem;
     margin: 0 auto;
 }
-
-@media only screen and (max-width: 684px) {
-
-    #game-area {
-        height: 500px;
-        min-width: 450px;
-    }
-
-    #links {
-        padding: 20px 0;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-
-    #game-area {
-        height: 500px;
-        min-width: 400px;
-    }
-
-    #game-area p {
-        padding: 0 15px;
-    }
-
-@media only screen and (max-width: 460px) {
-
-        #game-area {
-            height: 700px;
-            width: 20px;
-        }
-    
-        .button-class {
-            margin: 5px 20px;
-        }
-
-        #links {
-            padding: 5px 0;
-        }
