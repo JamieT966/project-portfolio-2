@@ -26,12 +26,14 @@ const question = [
             { text: 'A Gathering' correct: false}
         ]
     },
-    {question: "After what length of time should a bund be serviced?"
-    answers: [
-        { text: '3 years' correct: true}
-        { text: '5 years', correct: false},
-        { text: '1 year' correct: false},
-        { text: '6 months' correct: false}
-    ]}
+    {
+        question: "After what length of time should a bund be serviced?"
+        answers: [
+            { text: '3 years' correct: true}
+            { text: '5 years', correct: false},
+            { text: '1 year' correct: false},
+            { text: '6 months' correct: false}
+        ]
+    },
 
 ]
