@@ -99,7 +99,7 @@ html {
     text-align: center;
 }
 
-#submit-button {
+#submit-button, #next-button {
         background-color: #98c244; 
         border-radius: 5px;
         border: 2px solid #f8f8f8;
