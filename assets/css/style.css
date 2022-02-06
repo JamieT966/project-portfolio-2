@@ -10,6 +10,17 @@ html {
     padding: 0;
 }
 
+/* Logo at top of page */
+
+#heading {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#heading img {
+    height: 3em;
+}
+
 /* Links at bottom of page, website, LinkedIn and Twiiter */
 
 #links {
@@ -25,75 +36,6 @@ html {
     font-size: 1.8rem;
     margin: 0 auto;
 }
-
-#heading {
-    margin-top: 30px;
-    text-align: center;
-}
-
-#heading img {
-    height: 3em;
-}
-
-/* Home page design 
-
-#home-area {
-    margin: 30px auto;
-    height: 400px;
-    width: 60%;
-    min-width: 600px;
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom right, #f8f8f8, #2d3347);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#home-area h2{
-    width: 100%;
-    text-align: center;
-    color: #2d3347;
-    font-family: 'Opem Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: normal;
-    letter-spacing: 1px;
-}    
-
-#play-button {
-    width: 200px;
-    height: 75px;
-    border: 2px solid #f8f8f8;
-    background-color: #2d3347;
-    color: #f8f8f8;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-}
-
-#play-button:hover {
-    background-color: #f8f8f8;
-    color: #2d3347;
-    border: 3px solid #2d3347;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: transform 150ms;
-    transform: scale(1.05);
-}
-
-.button-class {
-    flex-basis: 40%;
-    height: 100px;
-    margin: 0 10px;
-    border-radius: 5px;
-    border: 3px solid #98c244;
-    box-shadow: 1px 1px #2d3347;
-    font-size: 1.2rem;
-}
-
-.button-class:hover {
-    background-color: #f8f8f8;
-    color: #2d3347;
-} */
 
 
 
