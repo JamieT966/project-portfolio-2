@@ -39,9 +39,7 @@ html {
 
 /* Start Quiz button */
 
-#start button {
-    
+.hide {
+  display: none;
 }
-
-
 
