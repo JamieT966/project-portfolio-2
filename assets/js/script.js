@@ -47,6 +47,8 @@ function showQuiz() {
     answerButtons[3].textContent = questions[i].alternatives[3];
 }
 
+// Increments i, allowing user to change set of questions when next is clicked
+
 function nextQuestion() {
     showQuiz(i++);
 }
