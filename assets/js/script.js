@@ -5,6 +5,10 @@ const quizArea = document.getElementById('quiz-area');
 const questionText = document.getElementById('question-text');
 const answerButtons = document.getElementsByClassName('choices');
 const nextButton = document.getElementById('next-button');
+const answerOne = document.getElementById('answer1');
+const answerTwo = document.getElementById('answer2');
+const answerThree = document.getElementById('answer3');
+const answerFour = document.getElementById('answer4');
 
 // Show quiz area and hide start button
 function unhideQuiz() {
@@ -24,15 +28,14 @@ let questions = [
     {
         question: 'What is a bund?',
         alternatives: ['A Secondary Enclosure', 'A Gathering', 'Office Furniture', 'A Car'],
-        correctAnswer: 1
+        correctAnswer: 0
     },
     {
         question: 'What is the maximum length of time a bund should be left unserviced?',
         alternatives: ['6 months', '1 year', '3 years', '5 years'],
-        correctAnswer: 3
+        correctAnswer: 2
     },
 ]
-console.log(questions.question)
 
 // Displays first question and answers after clicking start button
 
@@ -55,3 +58,15 @@ function nextQuestion() {
 
 startButton.addEventListener('click', showQuiz);
 nextButton.addEventListener('click', nextQuestion);
+
+// Checks answer, button turns green if correct and red if incorrect
+
+function checkAnswer() {
+    if (answerOne == questions.correctAnswer) {
+        answerOne.classList.add('correct')
+    } else {
+        answerOne.classList.add('incorrect')
+    }
+}
+
+answerOne.addEventListener('click', checkAnswer)
