@@ -8,6 +8,7 @@ const nextButton = document.getElementById('next');
 // Show quiz area and hide start button
 function unhideQuiz() {
     quizArea.classList.remove('hide')
+    quizArea.classList.add('flex')
     startButton.classList.add('hide')
 }
 
