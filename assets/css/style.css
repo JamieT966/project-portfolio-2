@@ -128,3 +128,13 @@ button:hover {
     padding: 0 50px;
     justify-content: center;
 }
+
+/* Correct and incorrect button stylings */
+
+.correct {
+    background-color: #98c244;
+}
+
+.incorrect {
+    background-color: #e6554d;
+}
