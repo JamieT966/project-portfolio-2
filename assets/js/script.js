@@ -4,7 +4,7 @@ const startArea = document.getElementById('start');
 const quizArea = document.getElementById('quiz-area');
 const questionText = document.getElementById('question-text');
 const answerButtons = document.getElementsByClassName('choices');
-const nextButton = document.getElementById('next');
+const nextButton = document.getElementById('next-button');
 
 // Show quiz area and hide start button
 function unhideQuiz() {
@@ -36,13 +36,20 @@ console.log(questions.question)
 
 // Displays first question and answers after clicking start button
 
+    let i = 0;
+
 function showQuiz() {
-    questionText.textContent = questions[0].question;
-    answerButtons[0].textContent = questions[0].alternatives[0];
-    answerButtons[1].textContent = questions[0].alternatives[1];
-    answerButtons[2].textContent = questions[0].alternatives[2];
-    answerButtons[3].textContent = questions[0].alternatives[3];
+    
+    questionText.textContent = questions[i].question;
+    answerButtons[0].textContent = questions[i].alternatives[0];
+    answerButtons[1].textContent = questions[i].alternatives[1];
+    answerButtons[2].textContent = questions[i].alternatives[2];
+    answerButtons[3].textContent = questions[i].alternatives[3];
+}
+
+function nextQuestion() {
+    showQuiz(i++);
 }
 
 startButton.addEventListener('click', showQuiz);
-
+nextButton.addEventListener('click', nextQuestion);
