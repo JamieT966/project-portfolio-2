@@ -34,6 +34,8 @@ let questions = [
 ]
 console.log(questions.question)
 
+// Displays first question and answers after clicking start button
+
 function showQuiz() {
     questionText.textContent = questions[0].question;
     answerButtons[0].textContent = questions[0].alternatives[0];
@@ -43,3 +45,4 @@ function showQuiz() {
 }
 
 startButton.addEventListener('click', showQuiz);
+
