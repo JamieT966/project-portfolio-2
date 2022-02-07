@@ -3,18 +3,22 @@
 html {
    /* background: #2d3347 url(../images/bground-image.png) no-repeat center;
     background-size: cover; */
-    color: #2d3347;
+    background-color: #2d3347;
+    color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-h2 {
+h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
 }
 
+p { 
+   font-size: 1.2rem; 
+}
 /* Logo at top of page */
 
 #heading {
@@ -33,6 +37,7 @@ h2 {
     padding: 30px 0;
     text-align: center;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .fab, .fas {
@@ -48,3 +53,47 @@ h2 {
   display: none;
 }
 
+/* Start screen */
+
+#start {
+    text-align: center;
+    height: auto;
+}
+
+#start h1 {
+    margin-top: 60px;
+}
+
+#start p {
+    margin-top: 30px;
+}
+
+#start button {
+    margin-top: 30px;
+}
+
+/* Button Design */
+
+button {
+    padding: 15px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: #98c244;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Quiz area */
+
+#quiz-area {
+    text-align: center;
+}
+
+#quiz-area p {
+    margin: 60px 0 30px 0;
+}
+
+#next {
+    margin-top: 30px;
+}
