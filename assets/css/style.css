@@ -82,6 +82,8 @@ button {
     background-color: #98c244;
     color: #ffffff;
     border: 2px solid #ffffff;
+    width: 40%;
+    margin: 0 auto;
 }
 
 button:hover {
@@ -90,6 +92,19 @@ button:hover {
     border: 2px solid #98c244;
     transition: 120ms;
     transform: scale(1.05);
+}
+
+.choices {
+    background-color: #f8f8f8;
+    color: #2d3347;
+    border: 2px solid #2d3347;
+    font-size: 1rem;
+}
+
+.choices:hover {
+    background-color: #2d3347;
+    color: #f8f8f8;
+    border: 2px solid #f8f8f8;
 }
 
 /* Quiz area */
@@ -111,4 +126,5 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     padding: 0 50px;
+    justify-content: center;
 }

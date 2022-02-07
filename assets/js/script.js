@@ -1,36 +1,45 @@
 // Declaring variables
-const startButton = document.getElementById('start');
+const startButton = document.getElementById('start-button');
+const startArea = document.getElementById('start');
 const quizArea = document.getElementById('quiz-area');
-const question = document.getElementById('question');
-const answerBtns = document.getElementsByClassName('choices');
+const questionText = document.getElementById('question-text');
+const answerButtons = document.getElementsByClassName('choices');
 const nextButton = document.getElementById('next');
 
 // Show quiz area and hide start button
 function unhideQuiz() {
     quizArea.classList.remove('hide')
     quizArea.classList.add('flex')
+    startArea.classList.add('hide')
     startButton.classList.add('hide')
 }
 
 startButton.addEventListener('click', unhideQuiz);
 
 // Get Question 
+let currentQuestion = 0;
+var score = 0;
+
 let questions = [
     {
         question: 'What is a bund?',
-        choice1: 'A Car',
-        choice2: 'Office Furniture',
-        choice3: 'A Gathering',
-        choice4: 'A Secondary Enclosure',
-        answer: 4, 
+        alternatives: ['A Secondary Enclosure', 'A Gathering', 'Office Furniture', 'A Car'],
+        correctAnswer: 1
     },
     {
         question: 'What is the maximum length of time a bund should be left unserviced?',
-        choice1: '5 years',
-        choice2: '3 years',
-        choice3: '1 year',
-        choice4: '6 months',
-        answer: 2, 
+        alternatives: ['6 months', '1 year', '3 years', '5 years'],
+        correctAnswer: 3
     },
 ]
+console.log(questions.question)
 
+function showQuiz() {
+    questionText.textContent = questions[0].question;
+    answerButtons[0].textContent = questions[0].alternatives[0];
+    answerButtons[1].textContent = questions[0].alternatives[1];
+    answerButtons[2].textContent = questions[0].alternatives[2];
+    answerButtons[3].textContent = questions[0].alternatives[3];
+}
+
+startButton.addEventListener('click', showQuiz);
