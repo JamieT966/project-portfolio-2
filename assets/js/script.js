@@ -5,11 +5,13 @@ const quizArea = document.getElementById('quiz-area');
 const questionText = document.getElementById('question-text');
 const answerButtons = Array.from(document.getElementsByClassName('choices'));
 const nextButton = document.getElementById('next-button');
+const turn = document.getElementById('question-tracker');
 let currentQuestion = {};
-let acceptingAnswers = false;
+let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
-let availableQuesions = [];
+let questionProgress = 0;
+let availableQuestions = 0;
 const MAX_QUESTIONS = 10;
 
 // Show quiz area and hide start button
@@ -109,21 +111,22 @@ let questions = [
 
 // Displays first question and answers after clicking start button
 
-    let questionNumber = 0;
-
 function showQuiz() {
     
-    questionText.textContent = questions[questionNumber].question;
-    answerButtons[0].textContent = questions[questionNumber].choice1;
-    answerButtons[1].textContent = questions[questionNumber].choice2;
-    answerButtons[2].textContent = questions[questionNumber].choice3;
-    answerButtons[3].textContent = questions[questionNumber].choice4;
+    questionText.textContent = questions[questionCounter].question;
+    answerButtons[0].textContent = questions[questionCounter].choice1;
+    answerButtons[1].textContent = questions[questionCounter].choice2;
+    answerButtons[2].textContent = questions[questionCounter].choice3;
+    answerButtons[3].textContent = questions[questionCounter].choice4;
+    questionProgress++
+    // Displays current question user is on
+    turn.innerText = `Question ${questionProgress} of 10`;
 }
 
 // Increments questionNumber, allowing user to change set of questions when next is clicked
 
 function nextQuestion() {
-    showQuiz(questionNumber++);
+    showQuiz(questionCounter++);
 }
 
 startButton.addEventListener('click', showQuiz);
@@ -142,10 +145,7 @@ function testPassingData(usersChoice, button) {
 } else {
     button.classList.add('incorrect')
 }
-setTimeout(() => {
-    selectedChoice.parentElement.classList.remove(classToApply);
-    getNewQuestion();
-  }, 1000);
+console.log(questions[0].answer)
 }
 
 
