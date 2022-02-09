@@ -3,9 +3,14 @@ const startButton = document.getElementById('start-button');
 const startArea = document.getElementById('start');
 const quizArea = document.getElementById('quiz-area');
 const questionText = document.getElementById('question-text');
+const choices = document.getElementsByClassName('choices');
 const answerButtons = Array.from(document.getElementsByClassName('choices'));
 const nextButton = document.getElementById('next-button');
 const turn = document.getElementById('question-tracker');
+const answerOne = document.getElementById('answer1');
+const answerTwo = document.getElementById('answer2');
+const answerThree = document.getElementById('answer3');
+const answerFour = document.getElementById('answer4');
 let questionCounter = 0;
 let questionProgress = 0;
 const MAX_QUESTIONS = 10;
@@ -139,20 +144,31 @@ answerButtons.forEach(button => button.addEventListener('click', () => {
 
 function testPassingData(usersChoice, button) {
     if (usersChoice == questions[questionCounter].answer) {
-    button.classList.add('correct')
+    button.classList.toggle('correct')
 } else {
-    button.classList.add('incorrect')
+    button.classList.toggle('incorrect')
 }
 }
 
+function clearAnswer() {
+    answerOne.classList.remove('correct')
+    answerOne.classList.remove('incorrect')
+    answerTwo.classList.remove('correct')
+    answerTwo.classList.remove('incorrect')
+    answerThree.classList.remove('correct')
+    answerThree.classList.remove('incorrect')
+    answerFour.classList.remove('correct')
+    answerFour.classList.remove('incorrect')
+}
+nextButton.addEventListener('click', clearAnswer);
+
+// Checks if question progress is equal to max questions i.e, does 10 = 10. If yes run endPage function
 function endQuiz() {
     if (questionProgress === MAX_QUESTIONS) { 
        nextButton.addEventListener('click', endPage)
     }
 }
-
+// Takes user to end-quiz.html
 function endPage() {
     return window.location.assign("/end-quiz.html")
 }
-
-//console.log(usersChoice == questions[questionCounter].answer)
