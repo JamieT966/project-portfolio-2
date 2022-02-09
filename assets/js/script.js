@@ -17,7 +17,7 @@ let questionCounter = 0;
 let questionProgress = 0;
 let score = 0;
 const MAX_QUESTIONS = 10;
-
+console.log(displayScore)
 // Show quiz area and hide start button
 function unhideQuiz() {
     quizArea.classList.remove('hide')
@@ -189,3 +189,5 @@ localStorage.getItem('displayScore', 'score')
 
  // Displays score at end of quiz
  displayScore.innerText = `You scored ${score} of 10!`;
+
+ 

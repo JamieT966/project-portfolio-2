@@ -92,6 +92,7 @@ button:hover {
     border: 2px solid #98c244;
     transition: 120ms;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .choices {
@@ -105,6 +106,7 @@ button:hover {
     background-color: #2d3347;
     color: #f8f8f8;
     border: 2px solid #f8f8f8;
+    cursor: pointer;
 }
 
 /* Quiz area */
