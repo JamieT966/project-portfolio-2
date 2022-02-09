@@ -72,6 +72,14 @@ p {
     margin-top: 30px;
 }
 
+#img-container {
+    width: 100%;
+}
+
+#start img {
+    height: 200px;
+    margin: 0 auto;
+}
 /* Button Design */
 
 button {
