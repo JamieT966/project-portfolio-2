@@ -133,8 +133,9 @@ function showQuiz() {
 // Increments questionCounter, allowing user to change set of questions when next is clicked
 
 function nextQuestion() {
-    showQuiz(questionCounter++);resetChoice()
-    resetChoice()
+    showQuiz(questionCounter++);resetChoice();
+    resetChoice();
+    questionText.style.color = '#ffffff';
     // MOVE localStorage.getItem('scoreDisplay', score)
     localStorage.setItem('scoreDisplay', score)
 }
@@ -164,10 +165,16 @@ function testPassingData(usersChoice, button) {
     score++
     // Disables other buttons from being selected
     disableChoice()
+    // Changes question text to correct message
+    questionText.innerText = "Well done, you got that question right!";
+    questionText.style.color = "#98c244";
 } else {
     button.classList.toggle('incorrect')
     // Disables other buttons from being selected
     disableChoice()
+     // Changes question text to incorrect message
+     questionText.innerText = "Unlucky, that answer was wrong.";
+     questionText.style.color = "#e6554d";
 }
 console.log(score)
 }
