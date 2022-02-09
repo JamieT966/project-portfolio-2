@@ -133,7 +133,6 @@ button:hover {
 
 #question-tracker {
     font-size: 1rem;
-    padding-right: 220px;
 }
 
 #question-text {
@@ -151,7 +150,7 @@ button:hover {
 /* End quiz screen */
 
 #end-page {
-    display: none;
+    
 }
 
 /* Correct and incorrect button stylings */

@@ -16,7 +16,7 @@ const scoreDisplay = document.getElementById('display-score');
 const endScreen = document.getElementById('end-page');
 let questionCounter = 0;
 let questionProgress = 0;
-let score = 0;
+var score = 0;
 const MAX_QUESTIONS = 10;
 
 // Show quiz area and hide start button
@@ -136,8 +136,6 @@ function nextQuestion() {
     showQuiz(questionCounter++);resetChoice();
     resetChoice();
     questionText.style.color = '#ffffff';
-    // MOVE localStorage.getItem('scoreDisplay', score)
-    localStorage.setItem('scoreDisplay', score)
 }
 
 startButton.addEventListener('click', showQuiz);
@@ -216,6 +214,7 @@ nextButton.addEventListener('click', clearAnswer);
 // Checks if question progress is equal to max questions i.e, does 10 = 10. If yes run endPage function
 function endQuiz() {
     if (questionProgress === MAX_QUESTIONS) { 
+       localStorage.setItem("playerFinalScore", score);
        nextButton.addEventListener('click', endPage)
     }
 }
@@ -223,8 +222,4 @@ function endQuiz() {
 function endPage() {
     return location.assign("end-quiz.html")
 }
-
- // Displays score at end of quiz
- scoreDisplay.innerText = `You scored ${score} of 10!`;
-
  
