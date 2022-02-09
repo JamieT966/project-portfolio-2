@@ -147,3 +147,7 @@ button:hover {
 .incorrect {
     background-color: #e6554d;
 }
+
+.button-disable {
+    pointer-events: none;
+}

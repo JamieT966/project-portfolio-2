@@ -13,6 +13,7 @@ const answerThree = document.getElementById('answer3');
 const answerFour = document.getElementById('answer4');
 let questionCounter = 0;
 let questionProgress = 0;
+let score = 0;
 const MAX_QUESTIONS = 10;
 
 // Show quiz area and hide start button
@@ -145,9 +146,16 @@ answerButtons.forEach(button => button.addEventListener('click', () => {
 function testPassingData(usersChoice, button) {
     if (usersChoice == questions[questionCounter].answer) {
     button.classList.toggle('correct')
+    // Increments score for correct answer
+    score++
+    console.log(score)
 } else {
     button.classList.toggle('incorrect')
 }
+}
+
+function disableChoice() {
+// NEED SOMETHING THAT WHEN 1 BUTTON IS CLICKED ALL BUTTONS DISABLE BAR NEXT
 }
 
 function clearAnswer() {
@@ -172,3 +180,4 @@ function endQuiz() {
 function endPage() {
     return window.location.assign("/end-quiz.html")
 }
+
