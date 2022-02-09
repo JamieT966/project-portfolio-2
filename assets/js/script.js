@@ -12,13 +12,13 @@ const answerOne = document.getElementById('answer1');
 const answerTwo = document.getElementById('answer2');
 const answerThree = document.getElementById('answer3');
 const answerFour = document.getElementById('answer4');
-const displayScore = document.getElementById('display-score');
+const scoreDisplay = document.getElementById('display-score');
 const endScreen = document.getElementById('end-page');
 let questionCounter = 0;
 let questionProgress = 0;
 let score = 0;
 const MAX_QUESTIONS = 10;
-console.log(displayScore)
+console.log(endScreen);
 // Show quiz area and hide start button
 function unhideQuiz() {
     quizArea.classList.remove('hide')
@@ -142,7 +142,7 @@ nextButton.addEventListener('click', nextQuestion);
 // Restrts quiz by returning user to index.html
 
 function restartQuiz() {
-    return window.location.assign("/index.html")
+    return location.assign("index.html")
 }
 
 restartButton.addEventListener('click', restartQuiz);
@@ -189,14 +189,14 @@ function endQuiz() {
 }
 // Takes user to end-quiz.html
 function endPage() {
-    return window.location.assign("/end-quiz.html")
+    return location.assign("end-quiz.html")
 }
 
 // Passes score to end.html
-localStorage.setItem('displayScore', 'score')
-localStorage.getItem('displayScore', 'score')
+localStorage.setItem('scoreDisplay', 'score')
+localStorage.getItem('scoreDisplay', 'score')
 
  // Displays score at end of quiz
- displayScore.innerText = `You scored ${score} of 10!`;
+ scoreDisplay.innerText = `You scored ${score} of 10!`;
 
  
