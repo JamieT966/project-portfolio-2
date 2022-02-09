@@ -3,7 +3,7 @@ const startButton = document.getElementById('start-button');
 const startArea = document.getElementById('start');
 const quizArea = document.getElementById('quiz-area');
 const questionText = document.getElementById('question-text');
-const choices = document.getElementsByClassName('choices');
+const choices = document.querySelectorAll('choices');
 const answerButtons = Array.from(document.getElementsByClassName('choices'));
 const nextButton = document.getElementById('next-button');
 const restartButton = document.getElementById('restart-button');
@@ -18,7 +18,7 @@ let questionCounter = 0;
 let questionProgress = 0;
 let score = 0;
 const MAX_QUESTIONS = 10;
-console.log(endScreen);
+
 // Show quiz area and hide start button
 function unhideQuiz() {
     quizArea.classList.remove('hide')
@@ -133,7 +133,10 @@ function showQuiz() {
 // Increments questionCounter, allowing user to change set of questions when next is clicked
 
 function nextQuestion() {
-    showQuiz(questionCounter++);
+    showQuiz(questionCounter++);resetChoice()
+    resetChoice()
+    // MOVE localStorage.getItem('scoreDisplay', score)
+    localStorage.setItem('scoreDisplay', score)
 }
 
 startButton.addEventListener('click', showQuiz);
@@ -159,14 +162,36 @@ function testPassingData(usersChoice, button) {
     button.classList.toggle('correct')
     // Increments score for correct answer
     score++
-    console.log(score)
+    // Disables other buttons from being selected
+    disableChoice()
 } else {
     button.classList.toggle('incorrect')
+    // Disables other buttons from being selected
+    disableChoice()
 }
+console.log(score)
 }
 
 function disableChoice() {
-// NEED SOMETHING THAT WHEN 1 BUTTON IS CLICKED ALL BUTTONS DISABLE BAR NEXT
+    answerButtons[0].classList.add('button-disable')
+    answerButtons[0].classList.remove(':hover')
+    answerButtons[1].classList.add('button-disable')
+    answerButtons[1].classList.remove(':hover')
+    answerButtons[2].classList.add('button-disable')
+    answerButtons[2].classList.remove(':hover')
+    answerButtons[3].classList.add('button-disable')
+    answerButtons[3].classList.remove(':hover')
+}
+
+function resetChoice() {
+    answerButtons[0].classList.remove('button-disable')
+    answerButtons[0].classList.add(':hover')
+    answerButtons[1].classList.remove('button-disable')
+    answerButtons[1].classList.add(':hover')
+    answerButtons[2].classList.remove('button-disable')
+    answerButtons[2].classList.add(':hover')
+    answerButtons[3].classList.remove('button-disable')
+    answerButtons[3].classList.add(':hover')
 }
 
 function clearAnswer() {
@@ -191,10 +216,6 @@ function endQuiz() {
 function endPage() {
     return location.assign("end-quiz.html")
 }
-
-// Passes score to end.html
-localStorage.setItem('scoreDisplay', 'score')
-localStorage.getItem('scoreDisplay', 'score')
 
  // Displays score at end of quiz
  scoreDisplay.innerText = `You scored ${score} of 10!`;

@@ -140,6 +140,12 @@ button:hover {
     justify-content: center;
 }
 
+/* End quiz screen */
+
+#end-page {
+    display: none;
+}
+
 /* Correct and incorrect button stylings */
 
 .correct {
@@ -149,6 +155,8 @@ button:hover {
 .incorrect {
     background-color: #e6554d;
 }
+
+/* Disable button stylings */
 
 .button-disable {
     pointer-events: none;
