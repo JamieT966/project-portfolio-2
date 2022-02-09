@@ -27,7 +27,7 @@ function unhideQuiz() {
     startButton.classList.add('hide')
 }
 
-startButton.addEventListener('click', unhideQuiz);
+//startButton.addEventListener('click', unhideQuiz);
 
 // Get Question 
 
@@ -138,8 +138,8 @@ function nextQuestion() {
     questionText.style.color = '#ffffff';
 }
 
-startButton.addEventListener('click', showQuiz);
-nextButton.addEventListener('click', nextQuestion);
+//startButton.addEventListener('click', showQuiz);
+//nextButton.addEventListener('click', nextQuestion);
 
 // Restrts quiz by returning user to index.html
 
@@ -147,7 +147,7 @@ function restartQuiz() {
     return location.assign("index.html")
 }
 
-restartButton.addEventListener('click', restartQuiz);
+//restartButton.addEventListener('click', restartQuiz);
 
 // Checks answer, button turns green if correct and red if incorrect
 
@@ -209,17 +209,16 @@ function clearAnswer() {
     answerFour.classList.remove('correct')
     answerFour.classList.remove('incorrect')
 }
-nextButton.addEventListener('click', clearAnswer);
 
 // Checks if question progress is equal to max questions i.e, does 10 = 10. If yes run endPage function
 function endQuiz() {
     if (questionProgress === MAX_QUESTIONS) { 
-       localStorage.setItem("playerFinalScore", score);
        nextButton.addEventListener('click', endPage)
     }
 }
 // Takes user to end-quiz.html
 function endPage() {
+    localStorage.setItem("playerFinalScore", score);
     return location.assign("end-quiz.html")
 }
  

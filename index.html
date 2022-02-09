@@ -24,7 +24,7 @@
         <div id="img-container">
             <img src="assets/images/safety.png" alt="">
         </div>
-        <button id="start-button">Start Quiz</button>
+        <button onclick="unhideQuiz(), showQuiz()" id="start-button">Start Quiz</button>
     </div>
 
     <div id="quiz-area" class="hide">
@@ -35,8 +35,8 @@
         <button data-choice="3" class="choices" id="answer3"></button>
         <button data-choice="4" class="choices" id="answer4"></button>
 
-        <button id="next-button">Next</button>
-        <button id="restart-button">Restart</button>
+        <button onclick="nextQuestion(), clearAnswer()" id="next-button">Next</button>
+        <button onclick="restartQuiz()" id="restart-button">Restart</button>
     </div>
 
     <div id="links">
