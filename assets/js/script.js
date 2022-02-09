@@ -6,6 +6,7 @@ const questionText = document.getElementById('question-text');
 const choices = document.getElementsByClassName('choices');
 const answerButtons = Array.from(document.getElementsByClassName('choices'));
 const nextButton = document.getElementById('next-button');
+const restartButton = document.getElementById('restart-button');
 const turn = document.getElementById('question-tracker');
 const answerOne = document.getElementById('answer1');
 const answerTwo = document.getElementById('answer2');
@@ -137,6 +138,14 @@ function nextQuestion() {
 
 startButton.addEventListener('click', showQuiz);
 nextButton.addEventListener('click', nextQuestion);
+
+// Restrts quiz by returning user to index.html
+
+function restartQuiz() {
+    return window.location.assign("/index.html")
+}
+
+restartButton.addEventListener('click', restartQuiz);
 
 // Checks answer, button turns green if correct and red if incorrect
 
