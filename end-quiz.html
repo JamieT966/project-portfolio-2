@@ -10,19 +10,27 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <title>Chemstore Quiz</title>
+    <title>Chemstore Quiz Results</title>
 </head>
 <body>
     <!--Logo in heading-->
     <div id="heading">
         <a href="index.html"><img src="assets/images/chemstore-logo.png" alt="Chemstore Logo"></a>
     </div>
-
-    <div id="end-page">
-        <h1>Quiz Over</h1>
-        <p id="display-score">Nope</p>
-    </div>
     
+    <div id="result-board">
+        <h1>Your Result!</h1>
+        <p id="result"></p>
+    </div>
+
+    <button onclick="restartQuiz()" id="restart-button">Restart</button>
+
+    <div id="links">
+        <a href="https://chemstore.ie/" target="_blank" rel="noopener" aria-label="Opens the Chemstore website page in a new tab."><i class="fas fa-link"></i></a>
+        <a href="https://www.linkedin.com/company/chemstore-group" target="_blank" rel="noopener" aria-label="Opens a LinkedIn page in a new tab."><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/chemstore" target="_blank" rel="noopener" aria-label="Opens a Twitter page in a new tab."><i class="fab fa-twitter"></i></a>
+    </div>
+
     <script src="assets/js/script.js"></script>
     <script src="assets/js/end-quiz.js"></script>
 </body>

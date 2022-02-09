@@ -1,4 +1,10 @@
 const playerFinalScore= localStorage.getItem('playerFinalScore');
-console.log(playerFinalScore)
+const resultShow = document.getElementById('result')
  // Displays score at end of quiz
- scoreDisplay.innerText = `You scored ${playerFinalScore} of 10!`;
+
+
+if(playerFinalScore < 5) {
+    resultShow.innerText = `You scored ${playerFinalScore} of 10! Needs improvement! Please click restart`;
+} else {
+    resultShow.innerText = `You scored ${playerFinalScore} of 10! Good work!`;
+}

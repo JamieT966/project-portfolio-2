@@ -174,7 +174,6 @@ function testPassingData(usersChoice, button) {
      questionText.innerText = "Unlucky, that answer was wrong.";
      questionText.style.color = "#e6554d";
 }
-console.log(score)
 }
 
 function disableChoice() {
