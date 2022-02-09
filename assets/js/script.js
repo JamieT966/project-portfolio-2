@@ -11,6 +11,8 @@ const answerOne = document.getElementById('answer1');
 const answerTwo = document.getElementById('answer2');
 const answerThree = document.getElementById('answer3');
 const answerFour = document.getElementById('answer4');
+const displayScore = document.getElementById('display-score');
+const endScreen = document.getElementById('end-page');
 let questionCounter = 0;
 let questionProgress = 0;
 let score = 0;
@@ -181,3 +183,9 @@ function endPage() {
     return window.location.assign("/end-quiz.html")
 }
 
+// Passes score to end.html
+localStorage.setItem('displayScore', 'score')
+localStorage.getItem('displayScore', 'score')
+
+ // Displays score at end of quiz
+ displayScore.innerText = `You scored ${score} of 10!`;
