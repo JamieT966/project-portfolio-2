@@ -6,12 +6,8 @@ const questionText = document.getElementById('question-text');
 const answerButtons = Array.from(document.getElementsByClassName('choices'));
 const nextButton = document.getElementById('next-button');
 const turn = document.getElementById('question-tracker');
-let currentQuestion = {};
-let acceptingAnswers = true;
-let score = 0;
 let questionCounter = 0;
 let questionProgress = 0;
-let availableQuestions = 0;
 const MAX_QUESTIONS = 10;
 
 // Show quiz area and hide start button
@@ -112,18 +108,20 @@ let questions = [
 // Displays first question and answers after clicking start button
 
 function showQuiz() {
-    
     questionText.textContent = questions[questionCounter].question;
     answerButtons[0].textContent = questions[questionCounter].choice1;
     answerButtons[1].textContent = questions[questionCounter].choice2;
     answerButtons[2].textContent = questions[questionCounter].choice3;
     answerButtons[3].textContent = questions[questionCounter].choice4;
     questionProgress++
+    
     // Displays current question user is on
     turn.innerText = `Question ${questionProgress} of 10`;
+    // Takes user to end-quiz.html
+    endQuiz();
 }
 
-// Increments questionNumber, allowing user to change set of questions when next is clicked
+// Increments questionCounter, allowing user to change set of questions when next is clicked
 
 function nextQuestion() {
     showQuiz(questionCounter++);
@@ -140,15 +138,21 @@ answerButtons.forEach(button => button.addEventListener('click', () => {
 }))
 
 function testPassingData(usersChoice, button) {
-    if (usersChoice == questions[0].answer) {
+    if (usersChoice == questions[questionCounter].answer) {
     button.classList.add('correct')
 } else {
     button.classList.add('incorrect')
 }
-console.log(questions[0].answer)
 }
 
+function endQuiz() {
+    if (questionProgress === MAX_QUESTIONS) { 
+       nextButton.addEventListener('click', endPage)
+    }
+}
 
+function endPage() {
+    return window.location.assign("/end-quiz.html")
+}
 
-
-
+//console.log(usersChoice == questions[questionCounter].answer)
