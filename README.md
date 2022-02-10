@@ -6,7 +6,7 @@
 
 Chemstore Group conduct chemical awareness training throughout Ireland throughout the year, this quiz has been designed to aid in that training. This will allow the business to ensure clients are taking the information on board. This quiz will also add a fun, interactive element for their clients that will liven up their training days.
 
-![Am I Responsive Image of Chemstore Quiz](media/responsive.PNG) COME BACK AFTER LINKS ARE WORKING
+![Am I Responsive Image of Chemstore Quiz](media/responsive.png)
 
 **The business goals of this quiz:**
 * Adds something different to their training days.
@@ -24,61 +24,43 @@ Chemstore Group conduct chemical awareness training throughout Ireland throughou
 
 * Start page features the Chemstore logo, a title, an image of chemical CPL symbols, links at the bottom to access the company's website, LinkedIn and Twitter. As well as a start button that initiates the quiz and a rules button that pops out a modal with rules and instructions.
 
-![Chemstore Quiz Start Menu](media/header.PNG)
+![Chemstore Quiz Start Menu](media/start.png)
 
-### Hero Image Section
+### Rules Modal
 
-* This section features a hero image and cover text displaying the Cheeky Monkeys Playschool ethos.
+* This modal displays the instructions and rules for the quiz.
 
-![Hero Image with Cover Text](media/hero-image.PNG)
+![Chemstore Quiz Rules Modal](media/rules.png)
 
-### What We Love About Cheeky Monkeys
+### Quiz Screen
 
-* Three key images, designed to quickly demonstrate the key three benefits that Cheeky Monkeys Playschool offer. 
+* The quiz screen displays the same logo and links at the botttom as all other pages on this quiz.
 
-* A grow animation has been added to the three images. This has been set to a duration of 5 seconds as I am limited with my knowledge of JavaScript, in the future I would like this set to trigger when the images come into view and reduce the duration to 1 second.
+* Their is a question section, an answer choice section containing four button with a choice in each. 
 
-![What We Love About Cheeky Monkeys, 3 Images](media/about-us.PNG)
+* The quiz screen also features a next and restart quiz button.
 
-### What We Learn At Cheeky Monkeys
+![Quiz Screen](media/qscreen.png)
 
-* The What We Learn section lists six key teachings at Cheeky Monkeys.
+### Correct
 
-* This allows the business to demonstrate the value they can offer to customers and allows clients to view what their children will be learning.
+* When a correct answer is selected the choice button that was selected will turn green with a message in the question zone displaying green correct text.
 
-![What We Learn At Cheeky Monkeys, 6 Text Boxes](media/curriculum.PNG)
+![Chemstore Quiz Correct Answer](media/correct.png)
 
-### Map Section
+### Incorrect
 
-* Allows customers to easily identify the location of Cheeky Monkeys Playschool via Google Maps.
+* When an incorrect answer is selected the choice button that was selected will turn red with a message in the question zone displaying red incorrect text.
 
-![Map Section](media/map.PNG)
+![Chemstore Quiz Incorrect Answer](media/incorrect.png)
 
-### Footer
+### Result Page
 
-* The footer section features the Cheeky Monkeys address, navigation links that mirror the navigation links in the header, social links and the copyright.
+* The result page shows when the quiz has finished and displays your score.
 
-* The navigation links allow easy navigation to any page on the website if the user has scrolled to the bottom of the page. The social links allow parents to keep in touch.
+![Chemstore Quiz Result Page](media/result.png)
 
-![Cheeky Monkeys Footer](media/footer.PNG)
-
-### Gallery Page
-
-* The gallery page allows the business to upload pictures of children doing activities and learning. This allows for the business to show social proof.
-
-* For the parents/ customers, it allows them to see children playing and learning or viewing their children.
-
-![Cheeky Monkeys Gallery Page](media/gallery.PNG)
-
-### Contact Us Page
-
-* The left-hand side displays the address, email address and phone number of Cheeky Monkeys Playschool.
-
-* The right-hand side is a contact form that allows the user to leave their details and the owner of Cheeky Monkeys will contact them.
-
-![Cheeky Monkeys Contact Us Page](media/contact.PNG)
-
-### Features Left to Implement
+### Features Left to Implement in The Future
 
 * In the future, I would like to add JavaScript that would allow the animation on the "What We Love About Cheeky Monkeys" images to start when they are scrolled into view.
 
