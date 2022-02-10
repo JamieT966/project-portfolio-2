@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap');
 
+:root {
+    --cgreen: #98c244;
+    --cred: #e6554d;
+    --cnavy: #2d3347;
+}
+
 html {
-   /* background: #2d3347 url(../images/bground-image.png) no-repeat center;
-    background-size: cover; */
-    background-color: #2d3347;
-    color: #ffffff;
+    background-color: var(--cnavy);
+    color: white;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -41,7 +45,7 @@ p {
 }
 
 .fab, .fas {
-    color: #98c244;
+    color: var(--cgreen);
     letter-spacing: 20px;
     font-size: 1.8rem;
     margin: 0 auto;
@@ -87,34 +91,34 @@ button {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     border-radius: 5px;
-    background-color: #98c244;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    background-color: var(--cgreen);
+    color: white;
+    border: 2px solid white;
     width: 40%;
     margin: 0 auto;
 }
 
 button:hover {
-    background-color: #ffffff;
-    color: #98c244;
-    border: 2px solid #98c244;
+    background-color: white;
+    color: var(--cgreen);
+    border: 2px solid var(--cgreen);
     transition: 120ms;
     transform: scale(1.05);
     cursor: pointer;
 }
 
 .choices {
-    background-color: #f8f8f8;
-    color: #2d3347;
-    border: 2px solid #2d3347;
+    background-color: white;
+    color: var(--cnavy);
+    border: 2px solid var(--cnavy);
     font-size: 1rem;
     width: 50%;
 }
 
 .choices:hover {
-    background-color: #2d3347;
-    color: #f8f8f8;
-    border: 2px solid #f8f8f8;
+    background-color: var(--cnavy);
+    color: white;
+    border: 2px solid white;
     cursor: pointer;
 }
 
@@ -130,15 +134,15 @@ button:hover {
     justify-content: center;
     width: 150px;
     margin-top: 30px;
-    background-color: #ffffff;
-    color: #98c244;
-    border: 2px solid #98c244;
+    background-color: white;
+    color: var(--cgreen);
+    border: 2px solid var(--cgreen);
 }
 
 #restart-button:hover {
-    background-color: #98c244;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    background-color: var(--cgreen);
+    color: white;
+    border: 2px solid white;
 }
 
 /* Quiz area */
@@ -194,11 +198,11 @@ button:hover {
 /* Correct and incorrect button stylings */
 
 .correct {
-    background-color: #98c244;
+    background-color: var(--cgreen);
 }
 
 .incorrect {
-    background-color: #e6554d;
+    background-color: var(--cred);
 }
 
 /* Disable button stylings */
@@ -249,7 +253,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e6554d;
+    background-color: var(--cred);
     margin: 10px auto;
     font-size: 1rem;
     height: 40px;
@@ -257,9 +261,9 @@ button:hover {
   }
 
   #myBtn:hover {
-      background-color: #fefefe;
-      color: #e6554d;
-      border: 2px solid #e6554d;
+      background-color: white;
+      color: var(--cred);
+      border: 2px solid var(--cred);
   }
 @media only screen and (max-width: 950px) {
     .choices {
