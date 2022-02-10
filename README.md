@@ -1,108 +1,211 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Chemstore Group Chemical Safety Quiz
 
-Welcome JamieT966,
+![Chemstore Logo](images/chemstore-logo.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Cheeky Monkeys Playschool Live Site](https://jamiet966.github.io/project-portfolio-1/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Cheeky Monkeys Playschool needed a website with their current one having been created over 10 years ago and has an extremely outdated look and feel. The new, updated website features three images showcasing the greatest benefits that Cheeky Monkeys have to offer. Six key teachings the children will learn while attending, a full gallery that features the children at play, the owner's contact details and a contact form.
 
-## Gitpod Reminders
+![Am I Responsive Image of Cheeky Monkeys Site](media/responsive.PNG)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+**The business goals of this website:**
+* Provide a new and updated website.
+* Display the key benefits & curriculum of attending Cheeky Monkeys Playschool.
+* Have a gallery to show pictures of children.
+* Most importantly, show the contact details for the playschool and a contact form for the owner to contact them.
 
-`python3 -m http.server`
+**The customer goals of this website are:**
+* Clear, easy and intuitive to use the website.
+* To easily know the location of Cheeky Monkeys Playschool.
+* To be able to contact Cheeky Monkeys Playschool via phone, email or contact form.
 
-A blue button should appear to click: _Make Public_,
+## **Features**
 
-Another blue button should appear to click: _Open Browser_.
+### Navigation Bar Header
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* The header/ navigation bar features on all three pages of the website. This features the logo, home page, gallery and contacts us to allow for easy navigation. The logo takes you back the user back to the home page.
 
-A blue button should appear to click: _Make Public_,
+* This allows users to navigate to any page, at any time, on any device.
 
-Another blue button should appear to click: _Open Browser_.
+![Cheeky Monkeys Header](media/header.PNG)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Hero Image Section
 
-To log into the Heroku toolbelt CLI:
+* This section features a hero image and cover text displaying the Cheeky Monkeys Playschool ethos.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Hero Image with Cover Text](media/hero-image.PNG)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### What We Love About Cheeky Monkeys
 
-------
+* Three key images, designed to quickly demonstrate the key three benefits that Cheeky Monkeys Playschool offer. 
 
-## Release History
+* A grow animation has been added to the three images. This has been set to a duration of 5 seconds as I am limited with my knowledge of JavaScript, in the future I would like this set to trigger when the images come into view and reduce the duration to 1 second.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![What We Love About Cheeky Monkeys, 3 Images](media/about-us.PNG)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### What We Learn At Cheeky Monkeys
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* The What We Learn section lists six key teachings at Cheeky Monkeys.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* This allows the business to demonstrate the value they can offer to customers and allows clients to view what their children will be learning.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![What We Learn At Cheeky Monkeys, 6 Text Boxes](media/curriculum.PNG)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Map Section
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Allows customers to easily identify the location of Cheeky Monkeys Playschool via Google Maps.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Map Section](media/map.PNG)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Footer
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* The footer section features the Cheeky Monkeys address, navigation links that mirror the navigation links in the header, social links and the copyright.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* The navigation links allow easy navigation to any page on the website if the user has scrolled to the bottom of the page. The social links allow parents to keep in touch.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Cheeky Monkeys Footer](media/footer.PNG)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Gallery Page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* The gallery page allows the business to upload pictures of children doing activities and learning. This allows for the business to show social proof.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* For the parents/ customers, it allows them to see children playing and learning or viewing their children.
 
-------
+![Cheeky Monkeys Gallery Page](media/gallery.PNG)
 
-## FAQ about the uptime script
+### Contact Us Page
 
-**Why have you added this script?**
+* The left-hand side displays the address, email address and phone number of Cheeky Monkeys Playschool.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* The right-hand side is a contact form that allows the user to leave their details and the owner of Cheeky Monkeys will contact them.
 
-**How will this affect me?**
+![Cheeky Monkeys Contact Us Page](media/contact.PNG)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Features Left to Implement
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* In the future, I would like to add JavaScript that would allow the animation on the "What We Love About Cheeky Monkeys" images to start when they are scrolled into view.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Cookies pop up - A pop-up banner at the bottom of the webpage to allow cookies, cookie settings or reject cookies. 
 
-**So….?**
+* A CAPTCHA function on the contact form to prevent spam from bots.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* A blog page so the business could post articles relevant to their industry, this would also help boost SEO if used correctly.
 
-**Can I opt out?**
+## **Testing**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Validator Testing
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* [W3C Markup Validation](https://validator.w3.org/)
+* [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
 
-**Anything more?**
+I validated my HTML and CSS with the W3C Markup Validator and W3C CSS Validator to check the validity of my code.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Client Story Testing
 
----
+* The most common path through the website is for the user to scroll down the main page, to prevent them having to scroll back up to the top of the page to navigate, I have added navigation links to the footer of the website.
 
-Happy coding!
+* The map section, the address on the contact page and the address can be found at the bottom of each page in the footer.
+
+* The contact page has the address, phone number and email address on the left side. With a contact form on the right side to leave a message.
+
+### Manual Testing
+
+* I have tested all links and all internal and external links are fully working. I have also tested when clicking the site logo and that returns the user to the home page. Any external links have a ```target="_blank"```, ensuring they open in a new tab.
+
+* The contact form has every field set to required, the form will not allow you to submit unless every field has content and one of the radio buttons has been selected. The email address field will not accept an invalid email format. When you press submit, you are taken to this page showing that all data has been captured correctly.
+
+![Successful Table Data Capture](media/table.PNG)
+
+* The website has been tested across all major browsers (Chrome, Firefox, Edge, Safari, etc) and all emulated mobile devices using Google Chrome Developer Tools. While testing I realised that my website was not fully responsive on very small screens, such as an iPhone 5. I had to add a width and max-width to resolve this.
+
+## **Bugs**
+
+* I found one minor bug when running the W3C Markup Validation. I have ignored this warning as this section does not require a heading.
+
+![Map Section Bug](media/map-warning.PNG)
+
+## **User Experience**
+
+### Strategy
+
+The client's goal was to have a new and up to date B2C website that was simple and intuitive to use. The website should demonstrate the key benefits and learnings to be gained by enrolling their child in Cheeky Monkeys Playschool. It should also have the address, a map and contact details listed so the customer can easily find them. A gallery was also requested to demonstrate social proof.
+
+### Scope
+
+I discussed with the client and we decided the scope of this project together. I gave an overview of what was on the table. For example, the home page, gallery and contact page were on the table. A blog page was discussed but was left out of the scope, this can be added at a later date.
+
+### Structure
+
+For the main structure, I implemented a responsive header and footer with navigation elements. This allows the user to navigate to the home, gallery and contact page, whether they are at the top or the bottom of the website. 
+On the Cheeky Monkeys contact form the submit button is orange with a white border but those colours invert when hovered over to demonstrate good interactive design.
+A 404 page was created that tells the user something went wrong and then provides a link back to the home page.
+
+### Skeleton
+
+I created a wireframe using Balsamiq for the home page. I firstly, drew by hand roughly how I wanted Cheeky Monkey's home page to look.
+
+![Home Page Wireframe](media/wireframe.png)
+
+### Surface
+
+For colours, I colour picked the orange in the Cheeky Monkeys logo and used the Adobe colour wheel to select a palette but I could not find anything that looked aesthetically pleasing so I instead opted for a three colour palette.
+
+```--off_white: #f8f8f8; --cm_orange: #B5772F; --text_color: #3a3a3a;```
+
+![Colour Pallete Used For Website](media/colours.png)
+
+## **Technologies**
+
+1. HTML
+2. CSS
+3. JavaScript (For fontawesome icons)
+4. Gitpod.io - for writing the code. Using the command line for committing and pushing to Git Hub
+5. GitHub - Used to host repository
+6. GIT - for version control of the project.
+7. [FreeFormatter.com](https://www.freeformatter.com/html-formatter.html) - Used to beautify my HTML.
+8. [Dan's Tools](https://www.cleancss.com/css-beautify/)
+
+## **Deployment**
+
+The website is hosted by GitHub Pages and the live page can be found here: [Cheeky Monkeys Playschool](https://jamiet966.github.io/project-portfolio-1/)
+
+**The Steps I Took To Deploy on GitHub Pages:**
+
+1. Went to github.com
+2. Under Repositories click on the desired project.
+3. Click on Settings just over the green Gitpod button.
+4. On the left navigation menu, find and click Pages.
+5. Under Source, change Branch to main and the files to /root and click save.
+6. Wait a few minutes and your repository will be live on Github Pages.
+
+![Your Repository was Published](media/published.PNG)
+
+As this website is hosted by GitHub pages it is directly deployed from the repository's master branch. This means that the deployed site will automatically update from any commits from the master branch of my repository.
+
+**The Steps I Took To Push Changes to Live website:**
+
+1. When have completed a section of code, in the terminal window: `git add .` or `git add index.html "or other file"`.
+2. `git commit -m "Your commit message here`.
+3. `git push`.
+
+To run a local copy, you can clone into any editor by pasting this: `git clone https://github.com/JamieT966/project-portfolio-1.git` into your editor.
+
+## **Credits**
+
+### Content
+
+* All content came from the Cheeky Monkeys Playschool owner, Rachel Tarpey. As well as the existing Cheeky Monkeys website
+
+### Media
+
+* All the stock imagery came from [Pexels](https://www.pexels.com/). The hero image and all gallery images.
+
+* The three images in the What we love about Cheeky Monkeys! section was designed by Lauren Tarpey.
+
+### Acknowledgments
+
+* First and foremost my mentor Brian Macharia, has been an exceptional teacher to me, going above and beyond.
+
+* [The Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), I would not have been able to do complete this project without it. 
+
+* I also found the YouTube video, created by Traversy Media particularly useful. [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&t=209s&ab_channel=TraversyMedia)
