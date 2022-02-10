@@ -19,7 +19,10 @@ let questionProgress = 0;
 var score = 0;
 const MAX_QUESTIONS = 10;
 
-// Show quiz area and hide start button
+/**
+ * Function hides start area after start quiz button is clicked.
+ * Unhides quiz area.
+ */
 function unhideQuiz() {
     quizArea.classList.remove('hide')
     quizArea.classList.add('flex')
@@ -27,10 +30,7 @@ function unhideQuiz() {
     startButton.classList.add('hide')
 }
 
-//startButton.addEventListener('click', unhideQuiz);
-
-// Get Question 
-
+// Get array of questions
 let questions = [
     {
         question: 'What is a bund?',
@@ -114,8 +114,10 @@ let questions = [
     },
 ]
 
-// Displays first question and answers after clicking start button
-
+/**
+ * Renders question into question text area.
+ * Renders choices for answers, 4 for each question.
+ */
 function showQuiz() {
     questionText.textContent = questions[questionCounter].question;
     answerButtons[0].textContent = questions[questionCounter].choice1;
@@ -130,32 +132,31 @@ function showQuiz() {
     endQuiz();
 }
 
-// Increments questionCounter, allowing user to change set of questions when next is clicked
-
+/**
+ * Increments questionCounter, allowing user to change set of questions when next is clicked.
+*/
 function nextQuestion() {
     showQuiz(questionCounter++);resetChoice();
     resetChoice();
     questionText.style.color = '#ffffff';
 }
 
-//startButton.addEventListener('click', showQuiz);
-//nextButton.addEventListener('click', nextQuestion);
-
-// Restrts quiz by returning user to index.html
-
+/**
+ * Restarts quiz by returning user to index.html.
+ */
 function restartQuiz() {
     return location.assign("index.html")
 }
 
-//restartButton.addEventListener('click', restartQuiz);
-
-// Checks answer, button turns green if correct and red if incorrect
-
+/**
+ * Checks answer, button turns green if correct and red if incorrect.
+ * Then increments score.
+ * Also changes question text to a correct or incorrect answer based on choice.
+ */
 answerButtons.forEach(button => button.addEventListener('click', () => {
     let theData = button.dataset.choice;
     testPassingData(theData, button)
 }))
-
 function testPassingData(usersChoice, button) {
     if (usersChoice == questions[questionCounter].answer) {
     button.classList.toggle('correct')
@@ -175,7 +176,9 @@ function testPassingData(usersChoice, button) {
      questionText.style.color = "#e6554d";
 }
 }
-
+/**
+ * Disables all other buttons when choice has been made to avoid multiple guesses.
+ */
 function disableChoice() {
     answerButtons[0].classList.add('button-disable')
     answerButtons[0].classList.remove(':hover')
@@ -186,7 +189,9 @@ function disableChoice() {
     answerButtons[3].classList.add('button-disable')
     answerButtons[3].classList.remove(':hover')
 }
-
+/**
+ * Resets all choice buttons when next button is clicked.
+ */
 function resetChoice() {
     answerButtons[0].classList.remove('button-disable')
     answerButtons[0].classList.add(':hover')
@@ -197,7 +202,9 @@ function resetChoice() {
     answerButtons[3].classList.remove('button-disable')
     answerButtons[3].classList.add(':hover')
 }
-
+/**
+ * Clears colour change on correct or incorrect answers.
+ */
 function clearAnswer() {
     answerOne.classList.remove('correct')
     answerOne.classList.remove('incorrect')
@@ -208,21 +215,26 @@ function clearAnswer() {
     answerFour.classList.remove('correct')
     answerFour.classList.remove('incorrect')
 }
-
-// Checks if question progress is equal to max questions i.e, does 10 = 10. If yes run endPage function
+/**
+ * Checks if question progress is equal to max questions i.e, does 10 = 10. If yes run endPage function
+*/
 function endQuiz() {
     if (questionProgress === MAX_QUESTIONS) { 
        nextButton.addEventListener('click', endPage)
     }
 }
-// Takes user to end-quiz.html
+/**
+ * Takes user's current score and stores locally to move to end-quiz.js.
+ * Automatically directs user to end quiz/ results page
+ */
 function endPage() {
     localStorage.setItem("playerFinalScore", score);
     return location.assign("end-quiz.html")
 }
 
-/* Entire modal structure taken from W3 Schools */
-
+/**
+ *  Entire modal structure taken from W3 Schools
+ */ 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
