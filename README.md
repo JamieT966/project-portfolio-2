@@ -2,32 +2,29 @@
 
 ![Chemstore Logo](media/chemstore_logo.png)
 
-[Cheeky Monkeys Playschool Live Site](https://jamiet966.github.io/project-portfolio-1/)
+[Chemstore Chemical Awareness Quiz Live Site](https://jamiet966.github.io/project-portfolio-2/)
 
-Cheeky Monkeys Playschool needed a website with their current one having been created over 10 years ago and has an extremely outdated look and feel. The new, updated website features three images showcasing the greatest benefits that Cheeky Monkeys have to offer. Six key teachings the children will learn while attending, a full gallery that features the children at play, the owner's contact details and a contact form.
+Chemstore Group conduct chemical awareness training throughout Ireland throughout the year, this quiz has been designed to aid in that training. This will allow the business to ensure clients are taking the information on board. This quiz will also add a fun, interactive element for their clients that will liven up their training days.
 
-![Am I Responsive Image of Cheeky Monkeys Site](media/responsive.PNG)
+![Am I Responsive Image of Chemstore Quiz](media/responsive.PNG) COME BACK AFTER LINKS ARE WORKING
 
-**The business goals of this website:**
-* Provide a new and updated website.
-* Display the key benefits & curriculum of attending Cheeky Monkeys Playschool.
-* Have a gallery to show pictures of children.
-* Most importantly, show the contact details for the playschool and a contact form for the owner to contact them.
+**The business goals of this quiz:**
+* Adds something different to their training days.
+* Break up the monotony of training days that can last several hours. 
+* Ensure that clients are paying attention by testing their knowledge.
 
-**The customer goals of this website are:**
-* Clear, easy and intuitive to use the website.
-* To easily know the location of Cheeky Monkeys Playschool.
-* To be able to contact Cheeky Monkeys Playschool via phone, email or contact form.
+**The customer goals of this quiz:**
+* Clear, easy and intuitive to use the quiz.
+* Provide a fun and interactive quiz to users.
+* To achieve a passing score.
 
 ## **Features**
 
-### Navigation Bar Header
+### Start Page 
 
-* The header/ navigation bar features on all three pages of the website. This features the logo, home page, gallery and contacts us to allow for easy navigation. The logo takes you back the user back to the home page.
+* Start page features the Chemstore logo, a title, an image of chemical CPL symbols, links at the bottom to access the company's website, LinkedIn and Twitter. As well as a start button that initiates the quiz and a rules button that pops out a modal with rules and instructions.
 
-* This allows users to navigate to any page, at any time, on any device.
-
-![Cheeky Monkeys Header](media/header.PNG)
+![Chemstore Quiz Start Menu](media/header.PNG)
 
 ### Hero Image Section
 
