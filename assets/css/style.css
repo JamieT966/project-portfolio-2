@@ -108,7 +108,7 @@ button:hover {
     color: #2d3347;
     border: 2px solid #2d3347;
     font-size: 1rem;
-    margin-bottom: 30px;
+    width: 50%;
 }
 
 .choices:hover {
@@ -173,7 +173,7 @@ button:hover {
 
 .flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
@@ -207,12 +207,14 @@ button:hover {
     pointer-events: none;
 }
 
-@media only screen and (max-width: 732) {
-  .flex {
+@media only screen and (max-width: 950px) {
+    .choices {
+        width: 60%;
+    }
+    }
 
-  }
-
-  .choices {
-      height: 30px;
-  }
+@media only screen and (max-width: 750px) {
+.choices {
+    width: 70%;
+}
 }
