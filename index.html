@@ -16,27 +16,27 @@
 <body>
     <!--Logo in heading-->
     <div id="heading">
-        <a href="index.html"><img src="assets/images/chemstore-logo.png" alt="Chemstore Logo"></a>
+        <a aria-label="Clicking this logo will redirect you to the start of this quiz" href="index.html"><img aria-label="Chemstore logo" src="assets/images/chemstore-logo.png" alt="Chemstore Logo"></a>
     </div>
 
     <div id="start">
         <h1>Chemical Awareness Quiz</h1>
         <div id="img-container">
-            <img src="assets/images/safety.png" alt="">
+            <img aria-label="image of many hazard safety CPL symbols" src="assets/images/safety.png" alt="">
         </div>
-        <button onclick="unhideQuiz(), showQuiz()" id="start-button">Start Quiz</button>
+        <button aria-label="Start quiz button, clicking this button will start the quiz" onclick="unhideQuiz(), showQuiz()" id="start-button">Start Quiz</button>
     </div>
 
     <div id="quiz-area" class="hide">
         <p id="question-tracker"></p>
         <h2 id="question-text"></h2>
-        <button data-choice="1" class="choices" id="answer1"></button>
-        <button data-choice="2" class="choices" id="answer2"></button>
-        <button data-choice="3" class="choices" id="answer3"></button>
-        <button data-choice="4" class="choices" id="answer4"></button>
+        <button data-choice="1" class="choices" aria-label="Button for answer one" id="answer1"></button>
+        <button data-choice="2" class="choices" aria-label="Button for answer two" id="answer2"></button>
+        <button data-choice="3" class="choices" aria-label="Button for answer three" id="answer3"></button>
+        <button data-choice="4" class="choices" aria-label="Button for answer four" id="answer4"></button>
 
-        <button onclick="nextQuestion(), clearAnswer()" id="next-button">Next</button>
-        <button onclick="restartQuiz()" id="restart-button">Restart</button>
+        <button onclick="nextQuestion(), clearAnswer()" aria-label="Next button, clicking this button will move the quiz to the next question" id="next-button">Next</button>
+        <button onclick="restartQuiz()" aria-label="Restart quiz button, clicking this button will restart the quiz" id="restart-button">Restart</button>
     </div>
 
     <div id="links">

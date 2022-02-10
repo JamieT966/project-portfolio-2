@@ -15,15 +15,17 @@
 <body>
     <!--Logo in heading-->
     <div id="heading">
-        <a href="index.html"><img src="assets/images/chemstore-logo.png" alt="Chemstore Logo"></a>
+        <a aria-label="Clicking this logo will redirect you to the start of this quiz" href="index.html"><img aria-label="Chemstore logo" src="assets/images/chemstore-logo.png" alt="Chemstore Logo"></a>
     </div>
     
     <div id="result-board">
         <h1>Your Result!</h1>
-        <p id="result"></p>
+        <p aria-label="Displays result out of 10" id="result"></p>
     </div>
 
-    <button onclick="restartQuiz()" id="restart-button">Restart</button>
+    <div id="result-restart">
+        <button aria-label="Restart button will restart the quiz" onclick="restartQuiz()" id="restart-button">Restart</button>
+    </div>
 
     <div id="links">
         <a href="https://chemstore.ie/" target="_blank" rel="noopener" aria-label="Opens the Chemstore website page in a new tab."><i class="fas fa-link"></i></a>
