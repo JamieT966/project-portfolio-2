@@ -93,6 +93,9 @@ I validated my HTML and CSS with the W3C Markup Validator and W3C CSS Validator 
 
 * The website has been tested across all major browsers (Chrome, Firefox, Edge, Safari, etc) and all emulated mobile devices using Google Chrome Developer Tools. While testing I realised that my website was not fully responsive on very small screens, such as an iPhone 5. I had to add width and max-width to resolve this.
 
+* I ran a Google lighthouse report that had very good results. The full report can be read [here.](https://pdfhost.io/edit?doc=6fdd79c5-8798-4ea9-97fd-3e80b8b8397c)
+![Google Lightouse Report](media/lighthouse.png) 
+
 ## **Bugs**
 
 * A bug that I found while creating this quiz was that when transferring the score variable from one javascript file to another was that when all answers were correct it would be one scoreless. E.g. all answers are correct but 9/10.
