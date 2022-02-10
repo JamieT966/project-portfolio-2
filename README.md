@@ -1,6 +1,6 @@
 # Chemstore Group Chemical Safety Quiz
 
-![Chemstore Logo](images/chemstore-logo.png)
+![Chemstore Logo](media/chemstore_logo.png)
 
 [Cheeky Monkeys Playschool Live Site](https://jamiet966.github.io/project-portfolio-1/)
 
