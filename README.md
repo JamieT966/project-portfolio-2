@@ -62,13 +62,11 @@ Chemstore Group conduct chemical awareness training throughout Ireland throughou
 
 ### Features Left to Implement in The Future
 
-* In the future, I would like to add JavaScript that would allow the animation on the "What We Love About Cheeky Monkeys" images to start when they are scrolled into view.
+* In the future, I would like to add a certificate that is automatically generated based off the user inputs, such as name, score, etc.
 
-* Cookies pop up - A pop-up banner at the bottom of the webpage to allow cookies, cookie settings or reject cookies. 
+* I would also like to add more questions when I sit down with Chemstore to flesh out more content.
 
-* A CAPTCHA function on the contact form to prevent spam from bots.
-
-* A blog page so the business could post articles relevant to their industry, this would also help boost SEO if used correctly.
+* There is a possibility of removing the restart button in the future as this becomes less of a quiz and more of a test. This would only show if the user recieves a failing grade.
 
 ## **Testing**
 
@@ -81,72 +79,76 @@ I validated my HTML and CSS with the W3C Markup Validator and W3C CSS Validator 
 
 ### Client Story Testing
 
-* The most common path through the website is for the user to scroll down the main page, to prevent them having to scroll back up to the top of the page to navigate, I have added navigation links to the footer of the website.
+* I have added a rules modal at the start page to make the user aware of what is expected of them.
 
-* The map section, the address on the contact page and the address can be found at the bottom of each page in the footer.
+* Their is currently a restart quiz button on every page so the user can restart the quiz at any time. The logo will also take the user back to the start screen as I believe that is expected of a logo.
 
-* The contact page has the address, phone number and email address on the left side. With a contact form on the right side to leave a message.
+* I have added a question counter to the top of the quiz screen. This makes it abundantly clear to the user exactly what question they are on and how many questions are left.
 
 ### Manual Testing
 
 * I have tested all links and all internal and external links are fully working. I have also tested when clicking the site logo and that returns the user to the home page. Any external links have a ```target="_blank"```, ensuring they open in a new tab.
 
-* The contact form has every field set to required, the form will not allow you to submit unless every field has content and one of the radio buttons has been selected. The email address field will not accept an invalid email format. When you press submit, you are taken to this page showing that all data has been captured correctly.
-
-![Successful Table Data Capture](media/table.PNG)
+* The quiz only allows you to select one answer per question, it then disables all other choice buttons and displays a correct or incorrect message.
 
 * The website has been tested across all major browsers (Chrome, Firefox, Edge, Safari, etc) and all emulated mobile devices using Google Chrome Developer Tools. While testing I realised that my website was not fully responsive on very small screens, such as an iPhone 5. I had to add a width and max-width to resolve this.
 
 ## **Bugs**
 
-* I found one minor bug when running the W3C Markup Validation. I have ignored this warning as this section does not require a heading.
+* A bug that I found while creating this quiz was that when transferring the score variable from one javascript file to another was that when all answers were correct it would be one score less. E.g. all answers correct but 9/10.
+I found that I was storing the score variable after I was directing the user to another page, meaning the score was 10 before clicking the next button but 9 after clicking the button.
 
-![Map Section Bug](media/map-warning.PNG)
+* A second bug that myself and a tutor found was that any event listeners added into my javascript file outside a function threw an error. I resolved this by using onclick attributes in my HTML files.
 
 ## **User Experience**
 
 ### Strategy
 
-The client's goal was to have a new and up to date B2C website that was simple and intuitive to use. The website should demonstrate the key benefits and learnings to be gained by enrolling their child in Cheeky Monkeys Playschool. It should also have the address, a map and contact details listed so the customer can easily find them. A gallery was also requested to demonstrate social proof.
+The client wanted a quiz to aid in their chemical safety training. Chemstore travel out to host the event and would like a multiple choice quiz to test attendees knowledge either at the end of the day or halfway through the day.
 
 ### Scope
 
-I discussed with the client and we decided the scope of this project together. I gave an overview of what was on the table. For example, the home page, gallery and contact page were on the table. A blog page was discussed but was left out of the scope, this can be added at a later date.
+I discussed with the client and we decided the scope of this project together. I gave an overview of what was on the table. For example, the basic outline of the quiz was to be delivered with a variable keeping track of the current page and another variable keeping track of the user's score.
+
+Unfortunately, due to time constraints the ability to issue the user with a certificate based on score fell out of the scope for this project. This can be revisted at a later date.
 
 ### Structure
 
-For the main structure, I implemented a responsive header and footer with navigation elements. This allows the user to navigate to the home, gallery and contact page, whether they are at the top or the bottom of the website. 
-On the Cheeky Monkeys contact form the submit button is orange with a white border but those colours invert when hovered over to demonstrate good interactive design.
-A 404 page was created that tells the user something went wrong and then provides a link back to the home page.
+For the main structure, I implemented a start screen hosting a modal with the rules. Once the start button is clicked then the quiz begins. For continuity, the Chemstore logo stays fixed to the top and three links are fixed to the bottom. These link to the company's website, LinkedIn and Twitter.
+
+All buttons colours invert when hovered over to demonstrate good interactive design.
+
+A results page tells the user their score and whether or not they need to restart the quiz.
 
 ### Skeleton
 
-I created a wireframe using Balsamiq for the home page. I firstly, drew by hand roughly how I wanted Cheeky Monkey's home page to look.
+Initially I drew out all the functions required and a rough idea how I wanted the quiz to look.
 
-![Home Page Wireframe](media/wireframe.png)
+I then created a wireframe using Balsamiq. 
+
+![Quiz Balsamiq Wireframe](media/wireframe.png)
 
 ### Surface
 
-For colours, I colour picked the orange in the Cheeky Monkeys logo and used the Adobe colour wheel to select a palette but I could not find anything that looked aesthetically pleasing so I instead opted for a three colour palette.
+For colours, I went with the Chemstore brand colour palette as I felt these looked nice and it offered continuity across the Chemstore brand.
 
-```--off_white: #f8f8f8; --cm_orange: #B5772F; --text_color: #3a3a3a;```
+```--cgreen: #98c244; --cred: #e6554d; --cnavy: #2d3347; white #ffffff```
 
-![Colour Pallete Used For Website](media/colours.png)
+![Colour Pallete Used For Chemstore Quiz](media/colours.png)
 
 ## **Technologies**
 
 1. HTML
 2. CSS
-3. JavaScript (For fontawesome icons)
+3. JavaScript
 4. Gitpod.io - for writing the code. Using the command line for committing and pushing to Git Hub
 5. GitHub - Used to host repository
 6. GIT - for version control of the project.
-7. [FreeFormatter.com](https://www.freeformatter.com/html-formatter.html) - Used to beautify my HTML.
-8. [Dan's Tools](https://www.cleancss.com/css-beautify/)
+7. [Beautifier](https://beautifier.io/) - Used to beautify my HTML, CSS and JavaScripy.
 
 ## **Deployment**
 
-The website is hosted by GitHub Pages and the live page can be found here: [Cheeky Monkeys Playschool](https://jamiet966.github.io/project-portfolio-1/)
+The website is hosted by GitHub Pages and the live page can be found here: [Chemstore Chemical Awareness Quiz](https://jamiet966.github.io/project-portfolio-2/)
 
 **The Steps I Took To Deploy on GitHub Pages:**
 
@@ -157,7 +159,7 @@ The website is hosted by GitHub Pages and the live page can be found here: [Chee
 5. Under Source, change Branch to main and the files to /root and click save.
 6. Wait a few minutes and your repository will be live on Github Pages.
 
-![Your Repository was Published](media/published.PNG)
+![Your Repository was Published](media/published.png)
 
 As this website is hosted by GitHub pages it is directly deployed from the repository's master branch. This means that the deployed site will automatically update from any commits from the master branch of my repository.
 
@@ -167,24 +169,26 @@ As this website is hosted by GitHub pages it is directly deployed from the repos
 2. `git commit -m "Your commit message here`.
 3. `git push`.
 
-To run a local copy, you can clone into any editor by pasting this: `git clone https://github.com/JamieT966/project-portfolio-1.git` into your editor.
+To run a local copy, you can clone into any editor by pasting this: `git clone https://github.com/JamieT966/project-portfolio-2.git` into your editor.
 
 ## **Credits**
 
 ### Content
 
-* All content came from the Cheeky Monkeys Playschool owner, Rachel Tarpey. As well as the existing Cheeky Monkeys website
+* All content came from the Chemstore chemical awarenesss training PowerPoint presentation. This gave me everything I needed to create questions and answers.
 
 ### Media
 
-* All the stock imagery came from [Pexels](https://www.pexels.com/). The hero image and all gallery images.
-
-* The three images in the What we love about Cheeky Monkeys! section was designed by Lauren Tarpey.
+* The Chemstore logo came from the Chemstore website. [Chemstore.ie](https://www.chemstore.ie/)
 
 ### Acknowledgments
 
-* First and foremost my mentor Brian Macharia, has been an exceptional teacher to me, going above and beyond.
+* First and foremost my mentor Brian Macharia, has been a great help on this project.
 
-* [The Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), I would not have been able to do complete this project without it. 
+* The Code Institute tutors, in particular Rebecca and John that were immensely helpful and patient guiding me through solving the issues I was having.
 
-* I also found the YouTube video, created by Traversy Media particularly useful. [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&t=209s&ab_channel=TraversyMedia)
+* I would like to credit this students quiz for giving me the idea for having a 'hide' class that could be toggled on and off depending on the need. [Geo Quiz](https://github.com/lee-joanne/geo-quiz)
+
+* I also need to credit W3 schools for their modal instructions that I completely copied and then adjusted to the needs of my quiz. [W3 Schools Modals](https://www.w3schools.com/howto/howto_css_modals.asp)
+
+* I also watched many YouTube videos for ideas but I did not follow any particular video.
