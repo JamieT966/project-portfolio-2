@@ -121,6 +121,7 @@ button:hover {
 
 .choices:hover {
     border: 2px solid white;
+    color: var(--cnavy);
     cursor: pointer;
 }
 
