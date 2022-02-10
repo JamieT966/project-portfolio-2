@@ -26,7 +26,7 @@
         </div>
         
         <button aria-label="Start quiz button, clicking this button will start the quiz" onclick="unhideQuiz(), showQuiz()" id="start-button">Start Quiz</button>
-        <button id="myBtn">Rules</button>
+        <button onclick="modalBtn()" id="myBtn">Rules</button>
     </div>
 
     <div id="quiz-area" class="hide">
@@ -45,8 +45,8 @@
     <!-- Entire Modal structure taken from W3 Schools -->    
     <div id="myModal" class="modal">
     
-      <div class="modal-content">
-        <span class="close">&times;</span>
+      <div onclick="modalWindow(event)" class="modal-content">
+        <span onclick="modalSpan()" class="close">&times;</span>
         <h3>Instructions & Rules</h3>
         <p>1. First answer clicked will be taken as answer. All other buttons will be unclickable except for next and restart.</p>
         <p>2. If you score less than 5 you have failed and will have to retake the quiz.</p>
