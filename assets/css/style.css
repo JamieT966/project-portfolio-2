@@ -120,7 +120,7 @@ button:hover {
 }
 
 .choices:hover {
-    border: 2px solid var(--cnavy);
+    border: 2px solid var(--cgreen);
     color: var(--cnavy);
     cursor: pointer;
 }
