@@ -4,7 +4,7 @@
 
 [Chemstore Chemical Awareness Quiz Live Site](https://jamiet966.github.io/project-portfolio-2/)
 
-Chemstore Group conduct chemical awareness training throughout Ireland throughout the year, this quiz has been designed to aid in that training. This will allow the business to ensure clients are taking the information on board. This quiz will also add a fun, interactive element for their clients that will liven up their training days.
+Chemstore Group conducts chemical awareness training throughout Ireland throughout the year, this quiz has been designed to aid in that training. This will allow the business to ensure clients are taking the information on board. This quiz will also add a fun, interactive element for their clients that will liven up their training days.
 
 ![Am I Responsive Image of Chemstore Quiz](media/responsive.png)
 
@@ -34,9 +34,9 @@ Chemstore Group conduct chemical awareness training throughout Ireland throughou
 
 ### Quiz Screen
 
-* The quiz screen displays the same logo and links at the botttom as all other pages on this quiz.
+* The quiz screen displays the same logo and links at the bottom as all other pages on this quiz.
 
-* Their is a question section, an answer choice section containing four button with a choice in each. 
+* There is a question section, an answer choice section containing four buttons with a choice in each. 
 
 * The quiz screen also features a next and restart quiz button.
 
@@ -62,11 +62,11 @@ Chemstore Group conduct chemical awareness training throughout Ireland throughou
 
 ### Features Left to Implement in The Future
 
-* In the future, I would like to add a certificate that is automatically generated based off the user inputs, such as name, score, etc.
+* In the future, I would like to add a certificate that is automatically generated based on the user inputs, such as name, score, etc.
 
 * I would also like to add more questions when I sit down with Chemstore to flesh out more content.
 
-* There is a possibility of removing the restart button in the future as this becomes less of a quiz and more of a test. This would only show if the user recieves a failing grade.
+* There is a possibility of removing the restart button in the future as this becomes less of a quiz and more of a test. This would only show if the user receives a failing grade.
 
 ## **Testing**
 
@@ -81,7 +81,7 @@ I validated my HTML and CSS with the W3C Markup Validator and W3C CSS Validator 
 
 * I have added a rules modal at the start page to make the user aware of what is expected of them.
 
-* Their is currently a restart quiz button on every page so the user can restart the quiz at any time. The logo will also take the user back to the start screen as I believe that is expected of a logo.
+* There is currently a restart quiz button on every page so the user can restart the quiz at any time. The logo will also take the user back to the start screen as I believe that is expected of a logo.
 
 * I have added a question counter to the top of the quiz screen. This makes it abundantly clear to the user exactly what question they are on and how many questions are left.
 
@@ -91,11 +91,11 @@ I validated my HTML and CSS with the W3C Markup Validator and W3C CSS Validator 
 
 * The quiz only allows you to select one answer per question, it then disables all other choice buttons and displays a correct or incorrect message.
 
-* The website has been tested across all major browsers (Chrome, Firefox, Edge, Safari, etc) and all emulated mobile devices using Google Chrome Developer Tools. While testing I realised that my website was not fully responsive on very small screens, such as an iPhone 5. I had to add a width and max-width to resolve this.
+* The website has been tested across all major browsers (Chrome, Firefox, Edge, Safari, etc) and all emulated mobile devices using Google Chrome Developer Tools. While testing I realised that my website was not fully responsive on very small screens, such as an iPhone 5. I had to add width and max-width to resolve this.
 
 ## **Bugs**
 
-* A bug that I found while creating this quiz was that when transferring the score variable from one javascript file to another was that when all answers were correct it would be one score less. E.g. all answers correct but 9/10.
+* A bug that I found while creating this quiz was that when transferring the score variable from one javascript file to another was that when all answers were correct it would be one scoreless. E.g. all answers are correct but 9/10.
 I found that I was storing the score variable after I was directing the user to another page, meaning the score was 10 before clicking the next button but 9 after clicking the button.
 
 * A second bug that myself and a tutor found was that any event listeners added into my javascript file outside a function threw an error. I resolved this by using onclick attributes in my HTML files.
@@ -104,13 +104,13 @@ I found that I was storing the score variable after I was directing the user to 
 
 ### Strategy
 
-The client wanted a quiz to aid in their chemical safety training. Chemstore travel out to host the event and would like a multiple choice quiz to test attendees knowledge either at the end of the day or halfway through the day.
+The client wanted a quiz to aid in their chemical safety training. Chemstore travels out to host the event and would like a multiple choice quiz to test attendees knowledge either at the end of the day or halfway through the day.
 
 ### Scope
 
 I discussed with the client and we decided the scope of this project together. I gave an overview of what was on the table. For example, the basic outline of the quiz was to be delivered with a variable keeping track of the current page and another variable keeping track of the user's score.
 
-Unfortunately, due to time constraints the ability to issue the user with a certificate based on score fell out of the scope for this project. This can be revisted at a later date.
+Unfortunately, due to time constraints, the ability to issue the user with a certificate based on score fell out of the scope for this project. This can be revisited at a later date.
 
 ### Structure
 
@@ -122,7 +122,7 @@ A results page tells the user their score and whether or not they need to restar
 
 ### Skeleton
 
-Initially I drew out all the functions required and a rough idea how I wanted the quiz to look.
+Initially, I drew out all the functions required and a rough idea of how I wanted the quiz to look.
 
 I then created a wireframe using Balsamiq. 
 
@@ -144,7 +144,7 @@ For colours, I went with the Chemstore brand colour palette as I felt these look
 4. Gitpod.io - for writing the code. Using the command line for committing and pushing to Git Hub
 5. GitHub - Used to host repository
 6. GIT - for version control of the project.
-7. [Beautifier](https://beautifier.io/) - Used to beautify my HTML, CSS and JavaScripy.
+7. [Beautifier](https://beautifier.io/) - Used to beautify my HTML, CSS and JavaScript.
 
 ## **Deployment**
 
@@ -175,7 +175,7 @@ To run a local copy, you can clone into any editor by pasting this: `git clone h
 
 ### Content
 
-* All content came from the Chemstore chemical awarenesss training PowerPoint presentation. This gave me everything I needed to create questions and answers.
+* All content came from the Chemstore chemical awareness training PowerPoint presentation. This gave me everything I needed to create questions and answers.
 
 ### Media
 
@@ -185,9 +185,9 @@ To run a local copy, you can clone into any editor by pasting this: `git clone h
 
 * First and foremost my mentor Brian Macharia, has been a great help on this project.
 
-* The Code Institute tutors, in particular Rebecca and John that were immensely helpful and patient guiding me through solving the issues I was having.
+* The Code Institute tutors, in particular, Rebecca and John were immensely helpful and patient guiding me through solving the issues I was having.
 
-* I would like to credit this students quiz for giving me the idea for having a 'hide' class that could be toggled on and off depending on the need. [Geo Quiz](https://github.com/lee-joanne/geo-quiz)
+* I would like to credit this students quiz for giving me the idea of having a 'hide' class that could be toggled on and off depending on the need. [Geo Quiz](https://github.com/lee-joanne/geo-quiz)
 
 * I also need to credit W3 schools for their modal instructions that I completely copied and then adjusted to the needs of my quiz. [W3 Schools Modals](https://www.w3schools.com/howto/howto_css_modals.asp)
 
