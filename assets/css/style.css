@@ -229,15 +229,18 @@ button:hover {
   }
   
   .modal-content {
-    background-color: #fefefe;
+    background-color: #f8f8f8;
+    color: var(--cnavy);
+    font-weight: normal;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid var(--cgreen);
+    border-radius: 10px;
     width: 80%;
   }
-  
+
   .close {
-    color: #aaaaaa;
+    color: #e6554d;
     float: right;
     font-size: 28px;
     font-weight: bold;
